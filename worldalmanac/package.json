@@ -6,6 +6,9 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-html-parser": "^2.0.2",
+    "react-native": "^0.59.1",
+    "react-native-elements": "^1.1.0",
+    "react-rangeslider": "^2.2.0",
     "react-scripts": "2.1.8",
     "react-simple-maps": "^0.12.1",
     "styled-components": "^4.2.0"
@@ -28,7 +31,6 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
-    "babel-loader": "^8.0.5",
-    "webpack": "^4.29.6"
+    "babel-loader": "^8.0.5"
   }
 }
