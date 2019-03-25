@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import SliderYear from './Slider';
 
 const PanelContainer = styled.div`
-    width: 350px;
-    padding-right: 100px;
+    width: 650px;
+    margin-right: 50px;
     margin-top: 20px;
+    background-color: grey;
+    text-align: center;
+    height: 700px;
 `;
 
 class RightPanel extends React.Component {
     render() {
         return (
             <PanelContainer>
-                <SliderYear/>
+                Form is here
             </PanelContainer>
         );
     }

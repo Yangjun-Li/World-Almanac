@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser';
 
 import Header from './Common/Header';
 import Footer from './Common/Footer';
-import BasicMap from './Map';
+import LeftPanel from './LeftPanel';
 import RightPanel from './Common/RightPanel';
 
 import { MainPage_Header } from '../Static/Ui';
@@ -24,7 +24,7 @@ class App extends Component {
       <React.Fragment>
         <Header text={ReactHtmlParser(MainPage_Header)}/>
         <Section>
-          <BasicMap/>
+          <LeftPanel/>
           <RightPanel/>
         </Section>
         <Footer/>
