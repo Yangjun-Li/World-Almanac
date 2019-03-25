@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ReactHtmlParser from 'react-html-parser';
 
-import { Footer_text } from '../Static/Ui';
+import { Footer_text } from '../../Static/Ui';
 
 const FootContainer = styled.div`
     box-sizing: border-box;

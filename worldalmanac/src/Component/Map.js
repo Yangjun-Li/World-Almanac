@@ -9,7 +9,7 @@ import {
 const wrapperStyles = {
   width: "100%",
   maxWidth: 980,
-  margin: "0 auto",
+  margin: "100px 0 0 0",
 }
 
 class BasicMap extends Component {

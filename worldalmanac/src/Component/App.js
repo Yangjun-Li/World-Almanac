@@ -5,14 +5,16 @@ import ReactHtmlParser from 'react-html-parser';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
 import BasicMap from './Map';
+import RightPanel from './Common/RightPanel';
 
-import { MainPage_Header } from './Static/Ui';
+import { MainPage_Header } from '../Static/Ui';
 
 const Section = styled.div`
       box-sizing: border-box;
-      width: 980px;
-      margin-top: 100px;
+      width: 100%;
       margin-left: 0;
+      display: flex;
+      justify-content: space-between;
   `;
 
 class App extends Component {
@@ -23,6 +25,7 @@ class App extends Component {
         <Header text={ReactHtmlParser(MainPage_Header)}/>
         <Section>
           <BasicMap/>
+          <RightPanel/>
         </Section>
         <Footer/>
       </React.Fragment>
