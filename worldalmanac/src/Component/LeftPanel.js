@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import SliderYear from './Common/Slider';
+import MyCalendar from './Common/Calendar';
 import BasicMap from './Map';
 
 const LeftPanelContainer = styled.div`
@@ -20,7 +20,7 @@ const LeftPanel = () => {
     return (
         <LeftPanelContainer>
             <SliderContainer>
-                <SliderYear/>
+                <MyCalendar/>
             </SliderContainer>
             <MapContainer>
                 <BasicMap/>
