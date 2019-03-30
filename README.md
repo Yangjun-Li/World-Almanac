@@ -4,3 +4,8 @@ This is a very interesting project. I want to build my own hitory diary, which w
 
 
 # Techniques used in this project
+
+### `Test-driven Project`
+
+###### * Flow Type
+###### * JEST
