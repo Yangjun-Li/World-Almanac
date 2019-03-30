@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-flowtype": "^3.4.2",
     "react": "^16.8.5",
     "react-calendar": "^2.18.1",
     "react-dom": "^16.8.5",
@@ -16,9 +19,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "babel src/ -d lib/",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "prepublish": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +36,9 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
-    "babel-loader": "^8.0.5"
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.95.1"
   }
 }

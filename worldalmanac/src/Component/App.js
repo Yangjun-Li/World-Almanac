@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import ReactHtmlParser from 'react-html-parser';
@@ -5,7 +7,7 @@ import ReactHtmlParser from 'react-html-parser';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
 import LeftPanel from './LeftPanel';
-import RightPanel from './Common/RightPanel';
+import RightPanel from './RightPanel';
 
 import { MainPage_Header } from '../Static/Ui';
 
@@ -18,17 +20,16 @@ const Section = styled.div`
   `;
 
 class App extends Component {
-
   render() {
     return (
-      <React.Fragment>
+      <div>
         <Header text={ReactHtmlParser(MainPage_Header)}/>
         <Section>
           <LeftPanel/>
           <RightPanel/>
         </Section>
         <Footer/>
-      </React.Fragment>
+      </div>
     );
   }
 }
